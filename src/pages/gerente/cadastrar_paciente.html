@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/gerente/cadastra_paciente.css">
+
+    <title>Sistema Odontológico</title>
+</head>
+
+<body>
+    <div id="retangle">
+        <div class="img_retangle">
+            <a href="#">
+                <img id="img" src="../../assets/mini_logo.png">
+            </a>
+            <a href="#">
+                <img id="img_perfil" src="../../assets/perfil.png">
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1>Cadastrar paciente</h1>
+        </div>
+        <div class="informacoes">
+            <form action="">
+                <div class="informacoes-pessoais">
+                    <p><b>Informações pessoais</b></p>
+                    <div class="container-info-pessoal">
+                        <div class="nome-paciente">
+                            <label for="nome">Nome do paciente:</label>
+                            <input id= "nome" type="text" placeholder="Ex: Francisco leal Junior da Silva">
+                        </div>
+
+                        <div class="sexo">
+                            <label for="sexo">Sexo:</label>
+                            
+                            <div class="radio-buttons">
+                                <input type="radio" id="sexo" value="masculino">
+                                M
+                                <input type="radio" name="sexo" id="sexo" value="masculino">
+                                F
+                            </div>
+                            
+
+                        </div>
+                        <div class="estado-civil">
+                            <label for="estado-civil">Estado Civil:</label>
+
+                            <div class="radio-estado-civil">
+                                <input type="radio" name="estado-civil" id="estado-civil">
+                                Solteiro
+                                <input type="radio" name="estado-civil" id="estado-civil">
+                                Casado
+                                <input type="radio" name="estado-civil" id="estado-civil">
+                                Divorciado
+                                <input type="radio" name="estado-civil" id="estado-civil">
+                                Viúvo
+                            </div>
+                            
+
+                        </div>
+    
+                    
+                    </div>
+                    <div class="container-info-doc">
+                        <div class="cpf">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00">
+                        </div>
+                        <div class="cartao">
+                            <label for="cartao">Catão do SUS</label>
+                            <input type="number" name="cartao" id="cartao" placeholder="000 0000 0000 0000">
+                        </div>
+                        <div class="data-nascimento">
+                            <label for="data-nascimento">Data de nascimento</label>
+                            <input type="number" name="data-nascimento" id="data-nascimento" placeholder="DD/MM/AA">
+                        </div>
+                        <div class="telefone-celular">
+                            <label for="telefone-celular">Telefone celular</label>
+                            <input type="number" name="telefone-celular" id="telefone-celular" placeholder="(00) 0000-0000">
+                        </div>
+                       
+                    </div>
+
+                
+                </div>
+                <div class="endereco">
+                    <p><b>Endereço</b></p>
+                    <div class="container-info-bairro">
+                        <div class="bairro">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" id="bairro" placeholder="Ex: Dom Pedro II">
+                        </div>
+                        <div class="cidade">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                    </div>
+                    <div class="container-info-cidade">
+                        <div class="complemento">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" name="complemento" id="complemento" placeholder="Ex: Apartamento, Casa, Residência...">
+                        </div>
+                         <div class="cep">
+                            <label for="cep">CEP</label>
+                            <input type="text" name="cep" id="cep">
+                        </div>
+                         <div class="estado">
+                            <label for="estado">Estado</label>
+                            <input type="text" name="estado" id="estado">
+                        </div>
+                        <div class="numero">
+                            <label for="numero">Número</label>
+                            <input type="number" name="numero" id="numero">
+                        </div>
+                       
+                    </div>
+                    
+
+                </div>
+            </form>
+        </div>
+        <div id="save">
+            <button >Salvar cadastro</button>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
