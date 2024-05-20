@@ -1,0 +1,90 @@
+*{margin: 0}
+
+.info_cliente{
+    display: flex;
+}
+.informacoes{
+    margin-left: 90px;
+}
+#nome{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#retangle {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #248DE9;
+}
+#img_perfil2{
+    width: 250.66px;
+    height: 220px;
+}
+.principal{
+    width: 60%;
+    
+}
+.informacoes > h4{
+    margin-bottom: 10px;
+}
+/* Mudar a fonte do texto h2*/
+h4{font-weight: 400;}
+h3{font-weight: 400;}
+main{margin: 40px;display: flex;border-right: 2px solid #999999;}
+p{ margin-top: 20px; text-align: justify; margin-right: 20px;}
+
+#img{
+    width: 50px;
+    height: 51.2px;
+}
+#prontuario{
+    margin: 40px;
+}
+.img_retangle {
+    width: 80%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{ background-color: blue; color: #fff; width: 100%; padding: 9px; border: none; border-radius: 10px; margin-top:20px ;}
+
+.datas{
+    display: flex;
+    margin-top: 20px;
+}
+.datas_texto{
+    margin-left: 20px;
+    color: gray;
+}
+.historico{
+    margin-left: 195px;
+}
+#hist_paciente{
+    text-align: center;
+}
+#divisoria{
+
+    width: 357px;
+    height: 0px;
+
+    border: 2px solid #999999;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
+#Div_pront{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botoes{
+    display: flex;
+}
+.botoes>button{
+    margin-left: 5px;
+}
