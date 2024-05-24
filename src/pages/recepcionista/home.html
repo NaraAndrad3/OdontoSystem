@@ -14,14 +14,19 @@
 <body>
     <div id="retangle">
         <div class="img_retangle">
-            <img id="img" src="../../assets/tela.png" alt="tela">
-        </div>     
+            <a href="./home.html">
+                <img id="img" src="../../assets/mini_logo.png">
+            </a>
+            <a href="./perfilusuario.html">
+                <img id="img_perfil" src="../../assets/perfil.png">
+            </a>
+        </div>
     </div>
     
     <div class="button-container">
         <button type="button" onclick="goPaciente()">Pacientes</button>    
-        <button type="button"> Agendamentos</button>
-        <button type="button"> Dentista </button>
+        <button type="button" onclick="goAgendamentos()"> Agendamentos</button>
+        <button type="button" onclick="goDentistas()"> Dentista </button>
     </div>
 
     <script src="../../scripts/recepcionista/home.js"></script>
