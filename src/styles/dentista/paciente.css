@@ -56,7 +56,9 @@ body {
     font-size: 15px;
     border-radius: 10px;
 }
-
+.button-container button:hover{
+    background-color:#04126d;
+}
 @media screen and (max-width: 800px) {
     .button-container {
       display: flex;

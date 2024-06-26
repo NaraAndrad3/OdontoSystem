@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    display: flex;
+  
+
+
+}
+
+.time-input {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.time-input input[type="number"],
+.time-input select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.time-input input[type="number"] {
+    width: 50px; 
+    text-align: center;
+}
+
+
+.info-consultas {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 60px;
+    box-sizing: border-box; 
+
+   
+}
+@media (max-width: 600px) {
+    .info-consultas {
+        margin-top: 20px; 
+    }
+}
+
+.date-group, .time-selection, .form {
+    margin-bottom: 20px;
+}
+
+.date-group label, .form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    display: block;
+}
+
+.date-group input[type="date"], 
+
+.time-input select,
+#cpf {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+
+}
+
+
+.save-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #071B96;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 13px;
+
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+.time-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.time-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-input input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+
+
+}
+.time-input {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.time-input input[type="number"],
+.time-input select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    max-width: 60px;
+    width: 100%;
+}
+
+.time-input input[type="number"] {
+    max-width: 50px;
+    width: 100%; 
+    text-align: center;
+}
