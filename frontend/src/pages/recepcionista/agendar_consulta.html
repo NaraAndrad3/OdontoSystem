@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/recepcionista/agendar_consulta.css">
+</head>
+
+<body>
+    <div class="info-consultas">
+        
+        <div class="form">
+            <div class="date-group">
+                <label for="data-consulta">Data de consulta:</label>
+                <input id="data-consulta" type="date">
+            </div>
+
+            <label for="start-time">Horário de atendimento</label>
+            <div class="time-selection">
+                <div class="time-input">
+                    <input type="number" id="startHour" name="startHour" min="1" max="12" placeholder="1">
+                    <span>:</span>
+                    <input type="number" id="startMinute" name="startMinute" min="0" max="59" placeholder="00">
+                    <select id="startPeriod" name="startPeriod">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            
+                <span>até</span>
+                <div class="time-input">
+                    <input type="number" id="endHour" name="endHour" min="1" max="12" placeholder="1">
+                    <span>:</span>
+                    <input type="number" id="endMinute" name="endMinute" min="0" max="59" placeholder="00">
+                    <select id="endPeriod" name="endPeriod">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="name-group">
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text">
+            </div>
+
+            <div class="cpf-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="000.000.000-00">
+            </div>
+
+            <button class="save-button">Salvar alteração</button>
+        </div>
+    </div>
+</body>
+
+</html>
