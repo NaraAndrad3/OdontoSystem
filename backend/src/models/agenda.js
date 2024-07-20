@@ -9,7 +9,7 @@ const Agenda = sequelize.define('Agenda', {
   cpf: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true
+    unique: false
   },
   telefone: {
     type: DataTypes.STRING,
