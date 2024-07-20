@@ -1,113 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/dentista/prontuario.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/dentista/prontuario.css" />
 
     <title>Sistema Odontológico</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="retangle">
-        <div class="img_retangle">
-            <a href="#">
-                <img id="img" src="../../assets/mini_logo.png">
-            </a>
-            <a href="#">
-                <img id="img_perfil" src="../../assets/perfil.png">
-            </a>
-        </div>
+      <div class="img_retangle">
+        <a href="#">
+          <img id="img" src="../../assets/mini_logo.png" />
+        </a>
+        <a href="../dentista/perfil_dentista.html">
+          <img id="img_perfil" src="../../assets/perfil.png" />
+        </a>
+      </div>
     </div>
     <div class="main">
-        <div class="header">
-            <h2>Prontuário</h2>
-        </div>
-        <div class="informacoes">
-            <form action="">
-                <div class="form-group">
-                    <label for="anamnese">Anamnese:</label>
-                    <textarea id="anamnese" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="historico-medico">Histórico Médico:</label>
-                    <textarea id="historico-medico" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="historico-odontologico">Histórico Odontológico:</label>
-                    <textarea id="historico-odontologico" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="exame-clinico">Exame Clínico:</label>
-                    <textarea id="exame-clinico" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="exames-complementares">Exames Complementares:</label>
-                    <textarea id="exames-complementares" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="diagnostico">Diagnóstico:</label>
-                    <textarea id="diagnostico" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="prescricao">Prescrição:</label>
-                    <textarea id="prescricao" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="plano-tratamento">Plano de Tratamento:</label>
-                    <textarea id="plano-tratamento" rows="4"></textarea>
-                </div>
-            
-                <div class="form-group">
-                    <label for="observacoes">Observações:</label>
-                    <textarea id="observacoes" rows="4"></textarea>
-                </div>
-            
-                <div class="info-consultas">
-                    <div class="date-group">
-                        <label for="data-consulta">Data de consulta:</label>
-                        <input id="data-consulta" type="date">
-                    </div>
-                    <div class="hour-group">
-                        <label for="hora-consulta">Horário da consulta:</label>
-                        <div class="radio-group">
-                            <input type="number" name="hora" id="hora-consulta-hora" min="1" max="12">
-                            <b>:</b>
-                            <input type="number" name="minuto" id="hora-consulta-minuto" min="0" max="59">
-                            
-                            <div class="hour-buttons">
-                                <button id="am">
-                                    AM
-                                </button>
-                                <button id="pm">
-                                    PM
-                                </button>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </form>
-            
-        </div>
-        <div id="save">
-            <button >Salvar cadastro</button>
-        </div>
+      <div class="header">
+        <h2>Prontuário</h2>
+      </div>
+      <div class="informacoes">
+        <form action="">
+          <div class="form-group">
+            <label for="anamnese">Anamnese:</label>
+            <textarea id="anamnese" rows="4"></textarea>
+          </div>
 
+          <div class="form-group">
+            <label for="historico-medico">Histórico Médico:</label>
+            <textarea id="historico-medico" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="historico-odontologico">Histórico Odontológico:</label>
+            <textarea id="historico-odontologico" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exame-clinico">Exame Clínico:</label>
+            <textarea id="exame-clinico" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exames-complementares">Exames Complementares:</label>
+            <textarea id="exames-complementares" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="diagnostico">Diagnóstico:</label>
+            <textarea id="diagnostico" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="prescricao">Prescrição:</label>
+            <textarea id="prescricao" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="plano-tratamento">Plano de Tratamento:</label>
+            <textarea id="plano-tratamento" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" rows="4"></textarea>
+          </div>
+
+          <div class="info-consultas">
+            <div class="date-group">
+              <label for="data-consulta">Data de consulta:</label>
+              <input id="data-consulta" type="date" />
+            </div>
+            <div class="hour-group">
+              <label for="hora-consulta">Horário da consulta:</label>
+              <div class="radio-group">
+                <input
+                  type="number"
+                  name="hora"
+                  id="hora-consulta-hora"
+                  min="1"
+                  max="12"
+                />
+                <b>:</b>
+                <input
+                  type="number"
+                  name="minuto"
+                  id="hora-consulta-minuto"
+                  min="0"
+                  max="59"
+                />
+
+                <div class="hour-buttons">
+                  <button id="am">AM</button>
+                  <button id="pm">PM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="save">
+        <button>Salvar cadastro</button>
+      </div>
     </div>
 
     <script src="../../scripts/dentista/prontuario.js"></script>
-</body>
+  </body>
 </html>
