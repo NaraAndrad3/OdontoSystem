@@ -5,8 +5,11 @@ const routes = express()
 const { cadastrarPaciente, listarPacientes, buscarPaciente } = require('../controllers/paciente')
 const {cadastrarDentista, listarDentistas, buscarDentista} = require('../controllers/dentista')
 const {getWeek, criarConsulta} = require('../controllers/calendar')
+const {cadastrarFuncionario,listarFuncionarios, buscarFuncionario} = require('../controllers/funcionario')
 
 
+  
+  
 // Paciente
 routes.post('/paciente', cadastrarPaciente)
 routes.get('/pacientes', listarPacientes)
@@ -27,6 +30,10 @@ routes.post('/consulta', criarConsulta)
 
 // --> gerentes
 // funcionarios
+
+routes.post('/funcionario', cadastrarFuncionario)
+routes.get('/funcionarios', listarFuncionarios)
+routes.get('/buscarFuncionarios', buscarFuncionario)
 
 
 

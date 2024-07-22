@@ -1,5 +1,5 @@
-function goCadatrarPaciente() {
-    window.location.href = './cadastrar_paciente.html'
+function goCadatrarFuncionario() {
+    window.location.href = './cadastrar_funcionario.html'
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const carregarPacientes = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/pacientes?offset=${offset}&limit=${limit}`);
+        const response = await fetch(`http://localhost:3000/funcionarios?offset=${offset}&limit=${limit}`);
         const pacientes = await response.json();
   
         pacientes.forEach(paciente => {
@@ -75,7 +75,7 @@ btn_buscar.addEventListener('click', (e) => {
 
 async function buscar(nome){
   try {
-    const response = await fetch(`http://localhost:3000/buscarPaciente?nome=${nome}`);
+    const response = await fetch(`http://localhost:3000/buscarFuncionarios?nome=${nome}`);
     const pacientes = await response.json();
    
     console.log(pacientes)

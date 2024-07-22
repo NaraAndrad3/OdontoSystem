@@ -159,7 +159,7 @@ body {
   margin-right: 20px;
 }
 
-#carregarMais {
+.carregarMais {
   position: sticky;
   bottom: 0;
   width: 180px;
