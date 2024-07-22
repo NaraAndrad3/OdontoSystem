@@ -14,10 +14,10 @@
 <body>
     <div id="retangle">
         <div class="img_retangle">
-            <a href="#">
+            <a href="./home.html">
                 <img id="img" src="../../assets/mini_logo.png">
             </a>
-            <a href="#">
+            <a href="./perfilusuario.html">
                 <img id="img_perfil" src="../../assets/perfil.png">
             </a>
         </div>
@@ -27,29 +27,24 @@
             <p>Dentista</p>
             <form action="submit">
                 <div class="input">
-                    <img id="lupa" src="../../assets/lupa.png" alt="ícone pessoa">
-                    <input type="text">
+                    <button type="submit" id="lupa"><img id="lupa" src="../../assets/lupa.png" alt="ícone pessoa"></button>
+                    <input type="text" id="nome_pessoa">
                 </div>
             </form>
-            <button class="button" type="submit" name="submit" onclick="irTelaCadastrarDentista()">
+            <button class="button" type="submit" name="submit" onclick="goCadatrarDentista()">
                 <span>Cadastrar dentista</span>
             </button>
         </div>
     </div>
-        <div class="container">
-            <div class="container-dentistas">
-                <button class="dentista">
-                    <div class="nome-dentista">
-                        <img src="../../assets/person.png" alt="Ícone">
-                        <span id="spanNome"> <b>Nome:</b> francisco pereira de sousa </span>
-                    </div>
-                    <span id="cpf"><b>CPF:</b>083.394.543.23</span>
-                </button>
-                
-            </div>
+    <div class="">
+        <div class="container-dentistas">
+            
         </div>
     </div>
-    <script src="../../scripts/index.js" defer></script>
+    </div>
+    <button id="carregarMais">Carregar Mais</button>
+    
 </body>
+<script src="../../scripts/gerente/dentista.js"></script>
 
 </html>

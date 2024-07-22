@@ -103,11 +103,16 @@ body {
   width: 745px;
 }
 
-.input #lupa {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  margin-left: 10px;
+.input {
+  display: flex;
+  align-items: center;
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-radius: 19px;
+  max-width: 745px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 745px;
 }
 .button {
   background-color: #071b96;
@@ -158,4 +163,20 @@ body {
 
 #cpf {
   margin-right: 20px;
+}
+
+#carregarMais {
+  position: sticky;
+  bottom: 0;
+  width: 180px;
+  height: 40px;
+  padding: 14px 41px 14px 41px;
+  gap: 10px;
+  border-radius: 13px;
+  background-color: #071b96;
+  color: #ffffff;
+  font-size: 13px;
+  box-shadow: 0 4px 8px rgba(53, 51, 51, 0.8);
+  border: none;
+  margin-top: 20px;
 }
