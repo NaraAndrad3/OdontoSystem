@@ -15,7 +15,7 @@ function irTelaPacientes() {
 }
 
 function irTelaAgendamento() {
-  window.location.href = "../recepcionista/agenda.html";
+  window.location.href = "../gerente/agenda.html";
 }
 
 function irTelaDentista() {

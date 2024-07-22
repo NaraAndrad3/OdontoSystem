@@ -8,23 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/gerente/agenda.css">
-    <title>Sistema Odontológico</title>
+    <title>Agenda</title>
 </head>
 <body>
     <body>
         <div id="retangle">
             <div class="img_retangle">
-                <a href="#">
+                <a href="./home.html">
                     <img id="img" src="../../assets/mini_logo.png">
                 </a>
-                <a href="#">
+                <a href="./perfilusuario.html">
                     <img id="img_perfil" src="../../assets/perfil.png">
                 </a>
             </div>
         </div>
         <div class="button">
             <h1>Agenda</h1>
-            <button class="botao">Adicionar consulta</button>
+            <button class="botao" onclick="goAgendarConsulta()">Adicionar consulta</button>
         </div>
         
     <div class="container">
@@ -45,7 +45,6 @@
                     <div>Q</div>
                     <div>S</div>
                     <div>S</div>
-                
                 </div>
                 <div class="dates">
                     <div class="prev-dates">19</div>
@@ -62,26 +61,6 @@
                 </div>
                 <div class="appointments">
                     <div class="appointment">
-                        <div class="time">09:00
-                            <div class="sub-time">09:30</div>
-                        </div>
-                        
-                        <div class="details">
-        
-                            <span class="name">Victor Araujo Leal Silva</span>
-                            <span class="id">756.955.857-44</span>
-                        </div>
-                    </div>
-                    <div class="appointment">
-                        <div class="time">12:00
-                            <div class="sub-time">12:30</div>
-                        </div>
-                        <div class="details">
-                            <span class="name">Victor Araujo Leal Silva</span>
-                            <span class="id">756.955.857-44</span>
-                        </div>
-                    </div>
-                    <div class="appointment">
                         <div class="time">14:00
                             <div class="sub-time">14:30</div>
                         </div>
@@ -94,5 +73,7 @@
             </div>
         </main>
     </div>
+
+    <script src="../../scripts/gerente/agenda.js"></script>
 </body>
 </html>
