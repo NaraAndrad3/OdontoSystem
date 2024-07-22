@@ -6,6 +6,7 @@ const { cadastrarPaciente, listarPacientes, buscarPaciente } = require('../contr
 const {cadastrarDentista, listarDentistas, buscarDentista} = require('../controllers/dentista')
 const {getWeek, criarConsulta} = require('../controllers/calendar')
 
+
 // Paciente
 routes.post('/paciente', cadastrarPaciente)
 routes.get('/pacientes', listarPacientes)
@@ -23,6 +24,10 @@ routes.get('/buscarDentista', buscarDentista)
 // agenda
 routes.post('/agenda', getWeek)
 routes.post('/consulta', criarConsulta)
+
+// --> gerentes
+// funcionarios
+
 
 
 module.exports = routes

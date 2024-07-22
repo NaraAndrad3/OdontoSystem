@@ -3,6 +3,7 @@ const sequelize = require('../db/connection');
 const Dentista = require('./dentista')
 const Pacientes = require('./paciente')
 const Agenda = require('./agenda')
+const Funcionarios = require('./funcionario') // criei a tabela funcionarios
 
 // criar relacionamento entre tabelas
 

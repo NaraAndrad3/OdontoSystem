@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // navegação das telas gerente
 function irTelaPacientes() {
-  window.location.href = "../recepcionista/paciente.html";
+  window.location.href = "../gerente/cadastrar_cliente.html";
 }
 
 function irTelaAgendamento() {
