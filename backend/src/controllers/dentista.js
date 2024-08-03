@@ -1,4 +1,5 @@
 const Dentista = require('../models/dentista'); // Importe o modelo Dentista
+const Prontuario = require('../models/prontuario')
 const Sequelize = require('sequelize')
 
 // Rota para cadastrar um novo dentista
@@ -91,5 +92,43 @@ const buscarDentista = async (req, res) => {
   }
 };
 
+// Teste 50: controlador prontuário
+const inserirProntuario = async (req, res) => {
+  try {
+    const {
+      anamnese,
+      historico_medico,
+      historico_odontologico,
+      exame_clinico,
+      exame_complementar,
+      diagnostico,
+      prescricao,
+      tratamento,
+      observacoes,
+      dataConsulta
+    } = req.body;
 
-module.exports = {cadastrarDentista, listarDentistas, buscarDentista};
+    console.log(req.body);
+
+    const NovoProntuario = await Prontuario.create({
+      anamnese,
+      historico_medico,
+      historico_odontologico,
+      exame_clinico,
+      exame_complementar,
+      diagnostico,
+      prescricao,
+      tratamento,
+      observacoes,
+      dataConsulta
+    });
+
+    res.status(201).json({ message: 'Prontuário cadastrado com sucesso', prontuario: NovoProntuario });
+  } catch (err) {
+    console.error('Erro ao cadastrar prontuário:', err);
+    res.status(500).json({ error: 'Erro ao cadastrar prontuário' });
+  }
+};
+
+
+module.exports = {cadastrarDentista, listarDentistas, buscarDentista, inserirProntuario};

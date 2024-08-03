@@ -4,6 +4,7 @@ const Dentista = require('./dentista')
 const Pacientes = require('./paciente')
 const Agenda = require('./agenda')
 const Funcionarios = require('./funcionario') // criei a tabela funcionarios
+const Prontuario = require('./prontuario')
 
 // criar relacionamento entre tabelas
 

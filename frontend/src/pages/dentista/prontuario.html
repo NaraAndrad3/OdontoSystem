@@ -17,7 +17,7 @@
   <body>
     <div id="retangle">
       <div class="img_retangle">
-        <a href="#">
+        <a href="./home.html">
           <img id="img" src="../../assets/mini_logo.png" />
         </a>
         <a href="../dentista/perfil_dentista.html">
@@ -30,63 +30,63 @@
         <h2>Prontuário</h2>
       </div>
       <div class="informacoes">
-        <form action="">
+        <form id="prontuario-form">
           <div class="form-group">
             <label for="anamnese">Anamnese:</label>
-            <textarea id="anamnese" rows="4"></textarea>
+            <textarea id="anamnese" name="anamnese" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="historico-medico">Histórico Médico:</label>
-            <textarea id="historico-medico" rows="4"></textarea>
+            <textarea id="historico-medico" name="historico-medico" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="historico-odontologico">Histórico Odontológico:</label>
-            <textarea id="historico-odontologico" rows="4"></textarea>
+            <textarea id="historico-odontologico" name="historico-odontologico" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="exame-clinico">Exame Clínico:</label>
-            <textarea id="exame-clinico" rows="4"></textarea>
+            <textarea id="exame-clinico" name="exame-clinico" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="exames-complementares">Exames Complementares:</label>
-            <textarea id="exames-complementares" rows="4"></textarea>
+            <textarea id="exames-complementares" name="exames-complementares" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="diagnostico">Diagnóstico:</label>
-            <textarea id="diagnostico" rows="4"></textarea>
+            <textarea id="diagnostico" name="diagnostico" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="prescricao">Prescrição:</label>
-            <textarea id="prescricao" rows="4"></textarea>
+            <textarea id="prescricao" name="prescricao" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="plano-tratamento">Plano de Tratamento:</label>
-            <textarea id="plano-tratamento" rows="4"></textarea>
+            <textarea id="plano-tratamento" name="plano-tratamento" rows="4"></textarea>
           </div>
 
           <div class="form-group">
             <label for="observacoes">Observações:</label>
-            <textarea id="observacoes" rows="4"></textarea>
+            <textarea id="observacoes" name="observacoes" rows="4"></textarea>
           </div>
 
           <div class="info-consultas">
             <div class="date-group">
               <label for="data-consulta">Data de consulta:</label>
-              <input id="data-consulta" type="date" />
+              <input id="data-consulta" name="data-consulta" type="date" />
             </div>
             <div class="hour-group">
               <label for="hora-consulta">Horário da consulta:</label>
               <div class="radio-group">
                 <input
                   type="number"
-                  name="hora"
+                  name="hora-consulta-hora"
                   id="hora-consulta-hora"
                   min="1"
                   max="12"
@@ -94,26 +94,27 @@
                 <b>:</b>
                 <input
                   type="number"
-                  name="minuto"
+                  name="hora-consulta-minuto"
                   id="hora-consulta-minuto"
                   min="0"
                   max="59"
                 />
 
                 <div class="hour-buttons">
-                  <button id="am">AM</button>
-                  <button id="pm">PM</button>
+                  <button id="am" type="button">AM</button>
+                  <button id="pm" type="button">PM</button>
                 </div>
               </div>
             </div>
           </div>
+
+          <div id="save">
+            <button type="submit"> Salvar cadastro</button>
+          </div>
         </form>
-      </div>
-      <div id="save">
-        <button>Salvar cadastro</button>
       </div>
     </div>
 
-    <script src="../../scripts/dentista/prontuario.js"></script>
+    <script src="../../scripts/dentista/cadastrar_prontuario.js"></script>
   </body>
 </html>
