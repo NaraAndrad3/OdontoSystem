@@ -105,7 +105,8 @@ const inserirProntuario = async (req, res) => {
       prescricao,
       tratamento,
       observacoes,
-      dataConsulta
+      dataConsulta,
+      horaConsulta
     } = req.body;
 
     console.log(req.body);
@@ -120,7 +121,8 @@ const inserirProntuario = async (req, res) => {
       prescricao,
       tratamento,
       observacoes,
-      dataConsulta
+      dataConsulta,
+      horaConsulta
     });
 
     res.status(201).json({ message: 'Prontuário cadastrado com sucesso', prontuario: NovoProntuario });

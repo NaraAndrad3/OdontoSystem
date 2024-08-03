@@ -41,7 +41,12 @@ const Prontuario = sequelize.define('Prontuario', {
   dataConsulta: {
     type: DataTypes.DATE,
     allowNull: false
+  },
+  horaConsulta: {
+    type: DataTypes.TEXT,
+    allowNull: false
   }
+
 });
 
 module.exports = Prontuario;
