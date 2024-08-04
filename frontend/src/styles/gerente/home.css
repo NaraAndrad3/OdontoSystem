@@ -38,6 +38,10 @@ body {
   justify-content: space-between;
 }
 
+#img_logout {
+  width: 50px;
+}
+
 .button-container {
   display: flex;
   justify-content: center;

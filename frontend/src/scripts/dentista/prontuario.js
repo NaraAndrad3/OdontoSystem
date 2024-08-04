@@ -13,6 +13,7 @@ document.getElementById('prontuario-form').addEventListener('submit', async func
       prescricao: formData.get('prescricao'),
       tratamento: formData.get('plano-tratamento'),
       observacoes: formData.get('observacoes'),
+      cpf: formData.get('cpf'),
       dataConsulta: formData.get('data-consulta'), // Corrigido de 'data'
       horaConsulta: `${formData.get('hora-consulta-hora')}:${formData.get('hora-consulta-minuto')}`
   };

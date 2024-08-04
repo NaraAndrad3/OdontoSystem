@@ -142,13 +142,18 @@ body {
 .img_retangle {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 1166.64px;
   height: 58px;
   left: 130px;
-  gap: 1052px;
+
+  margin: 0 10px;
 }
 
+#img_logout {
+  width: 50px;
+}
 /* Paciente */
 .pac {
   display: flex;

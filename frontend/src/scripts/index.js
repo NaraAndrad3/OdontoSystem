@@ -1,6 +1,18 @@
 function preventSubmit(event) {
   event.preventDefault();
-  window.location.href = "./pages/recepcionista/home.html";
+  
+  const email = document.getElementById('email')
+
+  console.log(email)
+
+  if (email.value == "raglicia"){
+    window.location.href = "../src/pages/recepcionista/home.html"
+  }else if (email.value == 'nara'){
+    window.location.href = "../src/pages/gerente/home.html"
+  } else if (email.value = 'nara2') {
+    window.location.href = "../src/pages/dentista/home.html"
+  }
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -34,6 +46,7 @@ function irTelaCadastrarDentista() {
 function irTelaPacientesDentista() {
   window.location.href = "../dentista/Pacientes.html";
 }
+
 function irTelaProntuarioDentista() {
   window.location.href = "../dentista/prontuario_dentista.html";
 }

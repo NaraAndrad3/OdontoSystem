@@ -3,7 +3,7 @@ const routes = express()
 
 // novos
 const { cadastrarPaciente, listarPacientes, buscarPaciente } = require('../controllers/paciente')
-const {cadastrarDentista, listarDentistas, buscarDentista, inserirProntuario} = require('../controllers/dentista')
+const {cadastrarDentista, listarDentistas, buscarDentista, inserirProntuario, buscarProntuarioPorCPF} = require('../controllers/dentista')
 const {getWeek, criarConsulta} = require('../controllers/calendar')
 const {cadastrarFuncionario,listarFuncionarios, buscarFuncionario} = require('../controllers/funcionario')
 
@@ -26,6 +26,7 @@ routes.get('/buscarDentista', buscarDentista)
 //Prontuario
 
 routes.post('/prontuario', inserirProntuario)
+routes.get('/prontuario/:cpf', buscarProntuarioPorCPF)
 
 // agenda
 routes.post('/agenda', getWeek)

@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
           nomeDiv.appendChild(img);
           nomeDiv.appendChild(nomeSpan);
+
+          pacienteButton.onclick = () => loadProntuario(paciente.cpf)
   
           pacienteButton.appendChild(nomeDiv);
           pacienteButton.appendChild(cpfSpan);
@@ -56,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Adiciona o evento de clique no botão "Carregar Mais"
     carregarMaisButton.addEventListener('click', carregarPacientes);
   });
-  
 
 const btn_buscar = document.getElementById('lupa')
 
@@ -68,6 +69,19 @@ btn_buscar.addEventListener('click', (e) => {
   buscar(nome)
 
 })
+
+async function loadProntuario(cpf) {
+
+  const data = {
+      cpf: cpf,
+  };
+    
+  // Armazenar dados no localStorage
+  localStorage.setItem('taskData', JSON.stringify(data));
+  
+  window.location.href = "../dentista/prontuario_dentista.html";
+}
+
 
 async function buscar(nome){
   try {

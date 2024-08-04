@@ -45,6 +45,11 @@ const Prontuario = sequelize.define('Prontuario', {
   horaConsulta: {
     type: DataTypes.TEXT,
     allowNull: false
+  },
+  cpf: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true
   }
 
 });

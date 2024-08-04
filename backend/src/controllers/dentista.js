@@ -1,4 +1,5 @@
 const Dentista = require('../models/dentista'); // Importe o modelo Dentista
+const Pacientes = require('../models/paciente')
 const Prontuario = require('../models/prontuario')
 const Sequelize = require('sequelize')
 
@@ -105,6 +106,7 @@ const inserirProntuario = async (req, res) => {
       prescricao,
       tratamento,
       observacoes,
+      cpf,
       dataConsulta,
       horaConsulta
     } = req.body;
@@ -121,6 +123,7 @@ const inserirProntuario = async (req, res) => {
       prescricao,
       tratamento,
       observacoes,
+      cpf,
       dataConsulta,
       horaConsulta
     });
@@ -132,5 +135,31 @@ const inserirProntuario = async (req, res) => {
   }
 };
 
+const buscarProntuarioPorCPF = async (req, res) => {
+  try {
+    const { cpf } = req.params;
 
-module.exports = {cadastrarDentista, listarDentistas, buscarDentista, inserirProntuario};
+    console.log(cpf);
+
+    // Buscar prontuário pelo CPF
+    const prontuario = await Prontuario.findOne({ where: { cpf } });
+
+    if (!prontuario) {
+      return res.status(404).json({ error: 'Prontuário não encontrado' });
+    }
+
+    // Buscar dados do paciente pelo CPF
+    const paciente = await Pacientes.findOne({ where: { cpf } });
+
+    if (!paciente) {
+      return res.status(404).json({ error: 'Paciente não encontrado' });
+    }
+
+    res.status(200).json({ prontuario, paciente });
+  } catch (err) {
+    console.error('Erro ao buscar prontuário:', err);
+    res.status(500).json({ error: 'Erro ao buscar prontuário' });
+  }
+};
+
+module.exports = {cadastrarDentista, listarDentistas, buscarDentista, inserirProntuario, buscarProntuarioPorCPF};
